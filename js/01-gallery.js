@@ -26,6 +26,8 @@ function createGallerySmallPictureCard(galleryItems) {
     })
     .join("");
 }
+
+
 function onGalleryImageClick(e) {
   e.preventDefault();
   
@@ -45,7 +47,11 @@ function onEscKeyPress(e) {
         instance.close(() => console.log("Esc"));
         galleryContainer.removeEventListener("keydown", onEscKeyPress);
       }
-    }
+  
+ }
+
+    
+
 
 
 
